@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-bar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+}
+
+.nav-menu {
+  font-size: 1.5rem;
+}
+
+/* hero */
+
+.hero-section {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  gap: 100px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-align: start;
+}
+
+.tag {
+  background-color: #149f39;
+  align-self: flex-start;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.hero-text h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background-color: #ffc066;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  align-self: flex-start;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+.hero-text button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.features {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}

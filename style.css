@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+/* navegation */
 .nav-bar {
   height: 80px;
   width: 100%;
@@ -19,6 +19,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .nav-menu {
@@ -89,6 +90,8 @@
   transition: all 0.3s ease;
 }
 
+/*  */
+
 .features {
   height: 110px;
   display: flex;
@@ -108,4 +111,120 @@
 
 .feature:hover {
   transform: scale(1.05);
+}
+/*  */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+button {
+  background-color: #149f39;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+section h2 {
+  margin-top: 30px;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+/* grid image section */
+
+.grid-image {
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.grid-image:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+
+.img-section {
+  display: grid;
+  gap: 12px;
+  grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+  margin-top: 50px;
+}
+
+.img1 {
+  grid-area: I1;
+}
+.img2 {
+  grid-area: I2;
+}
+.img3 {
+  grid-area: I3;
+}
+.img4 {
+  grid-area: I4;
+}
+.img5 {
+  grid-area: I5;
+}
+.img6 {
+  grid-area: I6;
+}
+.img7 {
+  grid-area: I7;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+  background-color: #fff0db;
+}
+.link_lists h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.link_lists ul {
+  list-style: none;
+}
+.link_lists ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.news_letter h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.news_letter input {
+  padding: 5px 40px;
+  margin-bottom: 10px;
+}
+.footer_container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon_container {
+  display: flex;
+  gap: 15px;
+  font-size: 32px;
 }
